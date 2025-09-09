@@ -4,9 +4,4 @@ resource "null_resource" "example" {
   }
 }
 
-resource "null_resource" "example2" {
-  provisioner "local-exec" {
-    command = "echo Hello, World2! ${var.message}"
-  }
-}
 
